@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia - Tech Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="navbar">
+    <a class="navbar-brand" href="./index.html">Tech Community</a>
+    <div class="nav-links">
+      <a href="./index.html">Beranda</a>
+      <a href="./form.html">Form Anggota</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3>Halaman Multimedia</h3>
+
+    <div class="row">
+      <div class="col">
+        <div class="card text-center" style="height: 100%;">
+          <h5 style="margin-top: 0;">Gambar</h5>
+          <img id="gambar" src="https://media.geeksforgeeks.org/wp-content/uploads/20240119182113/lb2.png" alt="Tech Image" style="margin-bottom: 20px;">
+          <br>
+          <button class="btn btn-outline" style="color: #0d6efd; border-color: #0d6efd;" onclick="gantiGambar()">Ganti Gambar</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card text-center" style="height: 100%;">
+          <h5 style="margin-top: 0;">Video</h5>
+          <iframe src="video.mp4" title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="col" style="flex: 1 1 100%;">
+        <div class="card text-center">
+          <h5 style="margin-top: 0;">Audio</h5>
+          <audio id="audioPlayer" src="audio.mp3"></audio>
+          <div class="gap-2">
+            <button class="btn-action btn-play" onclick="document.getElementById('audioPlayer').play()">▶ Play</button>
+            <button class="btn-action btn-pause" onclick="document.getElementById('audioPlayer').pause()">⏸ Pause</button>
+            <button class="btn-action btn-stop" onclick="stopAudio()">⏹ Stop</button>
+            <button class="btn-action btn-info" onclick="infoAudio()">ℹ Info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Tech Community
+  </footer>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
